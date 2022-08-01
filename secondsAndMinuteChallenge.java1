@@ -1,0 +1,54 @@
+
+
+public class secondsAndMinuteChallenge {
+    public static void main(String[] args) {
+        getDurationString(900, 59);
+    }
+
+public static long getDurationString(long minutes, long seconds) {
+    if(minutes>=0 && seconds >=0 && seconds <=59) {
+        if(minutes>=60) {
+            if(minutes%60==0) {
+                long xx = minutes/60;
+                long yy = 0;
+                long zz = seconds; 
+                System.out.println(xx+" h "+yy+" m "+zz+" s ");   
+            }
+            if(minutes%60!=0) {
+                int xx = (int)minutes/60;
+                long yy = minutes%60;
+                long zz = seconds; 
+                System.out.println(xx+" h "+yy+" m "+zz+" s ");   
+            }
+        }
+        System.out.println("Invalid Value");
+    
+    }
+    System.out.println("Invalid Value");;
+
+}
+public static long getDurationString(long seconds) {
+    if(seconds >=0 ) {
+        if(seconds>=60) {
+            if(seconds%60==0) {
+                long yy = seconds/60;
+                
+                long zz = 0; 
+                System.out.println(yy+" m "+zz+" s ");   
+            }
+            if(seconds%60!=0) {
+                int yy = (int)seconds/60;
+                long zz = seconds%60;
+                
+                System.out.println(yy+" m "+zz+" s ");   
+            }
+        }
+        return -1;
+    
+    }
+        return -1;
+
+}
+
+
+}

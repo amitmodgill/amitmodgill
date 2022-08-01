@@ -1,0 +1,27 @@
+public class calcdimensions {
+    public static void main(String[] args) {
+        System.out.println(calcFeetandInchesToCentimeters(5,-1));
+        
+    }
+
+    public static double calcFeetandInchesToCentimeters(double feet, double inches) {
+        if((feet >=0 && inches>=0) && inches<=12) {
+            return (feet+ calcFeetandInchesToCentimeters(inches) )*30.48;
+            
+        }
+            return -1;
+    }
+    
+    public static double calcFeetandInchesToCentimeters(double inches) {
+        if( inches>=0)  {
+            return (inches/12);
+            
+        }
+            return -1;
+    }
+
+    }
+
+
+
+
